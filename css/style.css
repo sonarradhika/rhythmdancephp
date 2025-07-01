@@ -1,0 +1,301 @@
+/* --- Rhythm Dance Academy Modern Theme --- */
+
+body {
+    background-color: #FAFAFA;
+    color: #212121;
+    font-family: 'Alata', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    background: linear-gradient(
+        rgba(250,250,250,0.5), 
+        rgba(237,231,246,0.5)
+    ), url('../images/mainimage.jpg') center/cover no-repeat;
+    min-height: 700px;
+    padding: 40px 0 40px 0;
+}
+
+header {
+    background: #fff;
+    border-bottom: 3px solid #6A1B9A;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #6A1B9A;
+    font-family: 'Limelight', Arial, sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+}
+
+header .logo {
+    width: 50px;
+}
+
+nav {
+    background: #6A1B9A;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover, nav a:focus {
+    background: #FF9800;
+    color: #fff;
+}
+
+form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(106,27,154,0.08);
+    padding: 2em 2em 1em 2em;
+    max-width: 500px;
+    margin: 2em auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #6A1B9A;
+    font-weight: 600;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1.2em;
+    border: 1.5px solid #6A1B9A;
+    border-radius: 5px;
+    background: #FAFAFA;
+    color: #212121;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border 0.2s;
+    text-align: left;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #FF9800;
+    outline: none;
+}
+
+input[type="submit"], button {
+    background: #FF9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover, button:hover {
+    background: #6A1B9A;
+}
+
+#roles {
+    width: 100%;
+    min-width: 250px;
+    max-width: 100%;
+    background: #EDE7F6;
+    color: #212121;
+    border: 1.5px solid #6A1B9A;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 1.2em;
+}
+
+.footer-content {
+    background: #6A1B9A;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+    border-top: 3px solid #FF9800;
+}
+
+.footer-content a {
+    color: #FF9800;
+    text-decoration: underline;
+}
+
+.footer-content a:hover {
+    color: #fff;
+}
+
+/* Section backgrounds and cards */
+#categories, #mainclasses, #other, .form-container {
+    background: #EDE7F6;
+    border-radius: 10px;
+    padding: 2em 1em;
+    margin-bottom: 2em;
+}
+
+#categories article, #other article {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(106,27,154,0.06);
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+}
+
+#categories h2, #mainclasses h2 {
+    color: #6A1B9A;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#categories p, #mainclasses p, #other p {
+    color: #212121;
+    font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+    form {
+        padding: 1em;
+        max-width: 98vw;
+    }
+    main {
+        padding: 10px 0;
+    }
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.user-actions {
+    display: flex;
+    gap: 0.5em;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.admin-list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.main-centered h1, .main-centered h2 {
+    font-family: 'Limelight', Arial, sans-serif;
+    color: #6A1B9A;
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+.main-centered ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-centered a, .main-centered input[type="submit"], .main-centered button {
+    font-family: 'Alata', Arial, sans-serif;
+    font-size: 1.3em;
+    color: #fff;
+    background: #6A1B9A;
+    padding: 0.7em 2em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.main-centered a:hover, .main-centered input[type="submit"]:hover, .main-centered button:hover {
+    background: #FF9800;
+    color: #fff;
+}
+
+#admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+#admin-dashboard h2 {
+    font-family: 'Limelight', Arial, sans-serif;
+    color: #6A1B9A;
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+#admin-dashboard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#admin-dashboard a {
+    font-family: 'Alata', Arial, sans-serif;
+    font-size: 1.3em;
+    color: #fff;
+    background: #6A1B9A;
+    padding: 0.7em 2em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+#admin-dashboard a:last-child {
+    background: #FF9800;
+}
+
+#admin-dashboard a:hover {
+    background: #FF9800;
+    color: #fff;
+}
+
